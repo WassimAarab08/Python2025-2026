@@ -9,7 +9,6 @@ while temp:
         if num < minimo:
             minimo = num
     ascendente.append(minimo)
-    temp.remove(minimo)
 descendente = ascendente[::-1]
 
 print("Original   :", original)

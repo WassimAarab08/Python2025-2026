@@ -38,6 +38,31 @@ print(repeticiones)
 print(f"La primera moda es {ordenModa[0]} con {ordenModa[1]} repeticiones ")
 print(f"La segunda moda es {ordenModa[2]} con {ordenModa[3]} repeticiones ")
 
+#Version sencilla
+
+
+animales = ["perro", "gato", "pez", "perro", "loro", "gato", "tortuga", "pez", "conejo", "perro"]
+maxRep=0
+animalMax=""
+repeticionesActuales=0
+for a in animales:
+
+    for an in animales:
+        if a == an:
+            repeticionesActuales+=1
+
+
+    if repeticionesActuales > maxRep :
+        maxRep=repeticionesActuales
+        animalMax=a
+
+    repeticionesActuales=0
+
+
+
+print(maxRep,animalMax)
+
+
 
 
 

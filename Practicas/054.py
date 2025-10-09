@@ -1,5 +1,5 @@
-numero= 32
-num=2
+numero= 36
+
 resultado = True
 
 for num in range(2,numero-1):
